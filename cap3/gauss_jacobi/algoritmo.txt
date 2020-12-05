@@ -1,0 +1,14 @@
+
+Assumindo que a matriz atende a condição de convergência:
+
+Passo 1: 
+  1.1 Separar os coeficientes e raizes em matriz A, X, B
+  1.2 Montar matrizes F, B
+  1.3 Montar expressão das raizes: testar pela expressão ou por matriz
+
+Passo 4 :
+  calcular expressão: X = FX + D
+
+Passo 5: Verificar condição de parada:
+  max(VetorErro) < £
+ https://sites.google.com/site/cnumer3q16/atividade3?tmpl=%2Fsystem%2Fapp%2Ftemplates%2Fprint%2F&showPrintDialog=1
