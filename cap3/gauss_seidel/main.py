@@ -45,15 +45,16 @@ D = np.diag(np.diag(a))
 #Matrix Diagonal inversa
 inv_D = np.linalg.inv(D)
 
-G = L + U 
+G = D + L 
+#print(G, "\n")
 
-F = np.dot(inv_D, G)
+inv_G = np.linalg.inv(G)
+#print(inv_G, "\n")
+
+F = np.dot(inv_G, U)
 #print(F, "\n")
-
 F = F*(-1)
-#print(F, "\n")
-
-B = np.dot(b, inv_D)
+B = np.dot(inv_G, b)
 #print(B, "\n")
 
 e = 0.05
