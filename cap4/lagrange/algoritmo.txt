@@ -1,0 +1,13 @@
+
+
+Passo 1: 
+  1.1 Reber pontos: Serão tuplas/listas ou vetores ? 
+  1.2 
+  1.3 
+
+Passo 3 : Calcular Pi(x)  
+
+Passo 4: 
+
+
+ http://www.decom.ufop.br/moreira/site_media/uploads/arquivos/02_interpolacao.pdf
