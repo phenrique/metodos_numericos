@@ -1,7 +1,8 @@
 import matplotlib as plt
-import sympy as sym
-from math import *
+from sympy import *
+#from math import *
 
+x, y = symbols("x y")
 
 f = lambda x : x**3 - 4*x**2 + x + 6
 print('Função: x**3 - 4*x**2 + x + 6 ')
@@ -9,6 +10,8 @@ print('Função: x**3 - 4*x**2 + x + 6 ')
 #f = lambda x : exp(-x) - x
 #print('Função: exp(-x) - x')
 
+#print(diff(f(x), x))
+#plot(f(x));
 
 def atende_bosano(fa, fb):
     if (fa * fb) < 0:
@@ -28,13 +31,14 @@ def atende_criterio(ek, e):
 # definições das variáveis
 
 a = 1.4
-b = 2.2
+b = 2.5
 dx = 0.01
 
 e = 0.01
 ek = 1
 x = []
 k = 0
+
 
 # Passo 1
 # procura intervalo 

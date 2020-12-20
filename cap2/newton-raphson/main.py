@@ -1,14 +1,16 @@
-import matplotlib as plt
 #import sympy as sym
 #from math import *
-import math as mt
+#import math as mt
+#import matplotlib.pyplot as plt
 from sympy import *
+#from matplotlib import *
 
 x, y = symbols("x y")
 #f = lambda x : exp(-x) - x
 f = lambda x : x**2 - 3
+fl = lambda x : diff(f(x), x)
 
-#print(diff(f(x), x))
+print(diff(f(x), x))
 #print(diff(f(x), x, 2).subs(x, .0123))
 
 def atende_condicao_metodo(x0):
@@ -30,9 +32,25 @@ def atende_criterio(ek, e):
         return False
 
 
+
+
+
+
 # Passo 1
 #x0 = 0.5
-x0 = 1.75
+x0 = 1.9
+
+r = lambda x : fl(x).subs(x,x0)*(x-x0) + f(x0)
+#plot(f(x))
+p = plot(f(x), (x, 0, 3), line_color = "blue",show = False);
+q = plot(r(x), (x, 0, 3), line_color = "red" ,show = False);
+p.extend(q)
+p.show()
+
+#fig, ax = plt.subplots()
+#ax.plot(x, f(x));
+#ax.plot(x, diff(f(x), x),  line_color = 'blue');
+#ax.plot.show()
 
 while not atende_condicao_metodo(x0):
     x0 = float(input("Digite um chute válido"))
