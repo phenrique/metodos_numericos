@@ -1,0 +1,42 @@
+Método das Diferenças divididas
+
+Passo 1: Preparação
+
+  1.1 Receber tabela de pontos 
+  1.2 Definir diferenças divididas df(x0, x1)
+  1.3 Definir segunda diferença dividida  
+    0.4.1 Escolher entre d2f(x0, x1, x2), ou df(x0, x1, x2)
+  1.4 Elaborar expressão para n derivadas
+  1.5 Criar função f(x)
+
+Passo 2 : Descrição do algoritmo  
+
+  Receber tabela
+  calcular diferenças
+  calcular f(x)
+  apresentar resultados
+
+Referencias:
+ http://www.decom.ufop.br/moreira/site_media/uploads/arquivos/02_interpolacao.pdf
+
+
+
+Anotações:
+
+A expressão: 
+(x - x1)(x - 2) .. (x - xn)
+Pode ser solucionada usando numpy:
+
+Tendo um vetor de x0 a xn subtraído de um escalar x, ex:
+xn = numpy.array([2, 3, 4, 5])
+x = 1
+xn - x
+out: 
+ xo = array([1, 2, 3, 4])
+Basta agora multiplicar o resultado pelo vetor xn
+xi * xo
+
+ou fazer o produto vetorial entre xi e xo que ja temos 
+o resultado final
+sum(xi*xo) = xi.dot(xo)
+

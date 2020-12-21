@@ -1,0 +1,16 @@
+
+# NVPM New Project File. It works!
+# --------------------------------
+# 
+# --> metodos_numericos
+
+workspace Métodos_Numéricos
+
+  tab Exer
+    buff Main      : ./main.py
+    *buff Utils    : ./utils.py
+    buff Make      : ./Makefile
+    *term Terminal :
+
+  tab Docs
+    buff Anotacoes   : ./algoritmo.txt
