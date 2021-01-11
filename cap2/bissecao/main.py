@@ -7,12 +7,11 @@ from math import *
 #sym.plot(f(x), (x, -5, 6))
 
 # definição da função
-#f = lambda x : 10*log(x) - 3*x - 1
-#print('Função: 10*log(x) - 3*x - 1')
+f = lambda x : x**3 - x - 2
+print('Função: x**3 - x - 2')
 
-f = lambda x : exp(-x) - x
-
-print('Função: exp(-x) - x')
+#f = lambda x : exp(-x) - x
+#print('Função: exp(-x) - x')
 
 def atende_bosano(fa, fb):
     if (fa * fb) < 0:
@@ -29,18 +28,18 @@ def atende_criterio(ek, e):
     else:
         return False
 
-a = 0
-b = 0
-dx = 0.001
+a = 1
+b = 2
+dx = 0.1
 
-e = 0.00001
+e = 0.03
 ek = 1
 x = []
 k = 0
 
-# procura intervalo 
-while not atende_bosano(f(a), f(b)):
-    b += dx
+## procura intervalo 
+#while not atende_bosano(f(a), f(b)):
+#    b += dx
      
 
 

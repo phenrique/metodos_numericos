@@ -7,23 +7,29 @@ x = np.arange(1, n + 1)
 
 print(x, "\n")
 print(y, "\n")
-print(n, "\n")
+#print(n, "\n")
 
 somaX  = sum(x)
 somaY  = sum(y)
 somaXX = sum(x*x)
 somaXY = sum(x*y)
 
-print(somaX, "\n")
-print(somaY, "\n")
-print(somaXX, "\n")
-print(somaXY, "\n")
+#print(somaX, "\n")
+#print(somaY, "\n")
+#print(somaXX, "\n")
+#print(somaXY, "\n")
 
 c = n * somaXY
 d = somaX * somaY
 e = n * somaXX
 f = somaX * somaX
 
-a = ((n * somaXY) - ()) / (() - ())
+a = (c - d) / (e - f)
 
-print(somaX * somaY, "\n")
+print(a, "\n")
+
+b = (somaY - (a * somaX)) / n
+
+print(b, "\n")
+
+print("f(x) =",a,"x","+",b)
